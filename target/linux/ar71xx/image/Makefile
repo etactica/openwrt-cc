@@ -136,6 +136,15 @@ define Device/carambola2
 endef
 TARGET_DEVICES += carambola2
 
+define Device/rme-eg200
+  BOARDNAME = RME-EG200
+  DEVICE_PROFILE := RME_EG200
+  IMAGE_SIZE = 16000k
+  CONSOLE = ttyATH0,115200
+  MTDPARTS = spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,16000k(firmware),64k(art)ro
+endef
+TARGET_DEVICES += rme-eg200
+
 define Device/weio
   BOARDNAME = WEIO
   IMAGE_SIZE = 16000k
