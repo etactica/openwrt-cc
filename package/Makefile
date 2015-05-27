@@ -146,6 +146,7 @@ endif
 $(curdir)/index: FORCE
 	@echo Generating package index...
 	@for d in $(PACKAGE_SUBDIRS); do ( \
+		echo "Indexing packages for feed: $$d"; \
 		mkdir -p $(PACKAGE_DIR)/$$d; \
 		cd $(PACKAGE_DIR)/$$d || continue; \
 		$(SCRIPT_DIR)/ipkg-make-index.sh . 2>&1 > Packages && \
