@@ -1,0 +1,11 @@
+--- a/arch/mips/ath25/devices.h
++++ b/arch/mips/ath25/devices.h
+@@ -6,7 +6,7 @@
+ #define AR231X_GPIO_IRQ_BASE		0x30
+ 
+ /* GPIO number for AR2315/16 reset issue workaround */
+-#define AR2315_RESET_GPIO		5
++#define AR2315_RESET_GPIO		6
+ 
+ #define ATH25_REG_MS(_val, _field)	(((_val) & _field##_M) >> _field##_S)
+ 
