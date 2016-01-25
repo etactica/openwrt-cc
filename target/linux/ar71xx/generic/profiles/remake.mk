@@ -7,7 +7,8 @@
 
 define Profile/RME_EG200
 	NAME:=ReMake Electric EG200
-	PACKAGES:=kmod-usb-core kmod-usb2 kmod-ledtrig-usbdev \
+	PACKAGES:=kmod-usb-core kmod-usb2 \
+		kmod-ledtrig-oneshot kmod-ledtrig-usbdev \
 		kmod-fs-vfat kmod-fs-msdos \
 		kmod-usb-serial kmod-usb-serial-ftdi \
 		kmod-usb-storage kmod-usb-storage-extras \
