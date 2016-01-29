@@ -6,7 +6,7 @@
 #
 
 define Profile/RME_EG200
-	NAME:=ReMake Electric EG200
+	NAME:=eTactica EG-200
 	PACKAGES:=kmod-usb-core kmod-usb2 \
 		kmod-ledtrig-oneshot kmod-ledtrig-usbdev \
 		kmod-fs-vfat kmod-fs-msdos \
@@ -18,7 +18,7 @@ define Profile/RME_EG200
 endef
 
 define Profile/RME_EG200/Description
-	Package set optimized for the ReMake Electric EG200
+	Package set optimized for the eTactica EG-200
 endef
 
 $(eval $(call Profile,RME_EG200))

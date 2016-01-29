@@ -1,11 +1,11 @@
 /*
- * ReMake Electric EG-200 board, based on 8devices Carambola2 module
+ * eTactica EG-200 board, based on 8devices Carambola2 module
  *
- *  Copyright (C) 2015 Karl Palsson <karlp@remake.is>
+ * Copyright (C) 2015 Karl Palsson <karlp@etactica.com>
  *
- *  This program is free software; you can redistribute it and/or modify it
- *  under the terms of the GNU General Public License version 2 as published
- *  by the Free Software Foundation.
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License version 2 as published
+ * by the Free Software Foundation.
  */
 
 #include <asm/mach-ath79/ath79.h>
@@ -100,5 +100,5 @@ static void __init rme_eg200_setup(void)
 	ath79_register_usb();
 }
 
-MIPS_MACHINE(ATH79_MACH_RME_EG200, "RME-EG200", "ReMake Electric EG200",
+MIPS_MACHINE(ATH79_MACH_RME_EG200, "RME-EG200", "eTactica EG-200",
 		rme_eg200_setup);
