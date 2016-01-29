@@ -470,6 +470,9 @@ ar71xx_board_detect() {
 	*"EnGenius ESR900")
 		name="esr900"
 		;;
+	*"eTactica EG-200")
+		name="rme-eg200"
+		;;
 	*JA76PF)
 		name="ja76pf"
 		;;
@@ -601,9 +604,6 @@ ar71xx_board_detect() {
 		;;
 	*"Qihoo 360 C301")
 		name="qihoo-c301"
-		;;
-	*"ReMake Electric EG200")
-		name="rme-eg200"
 		;;
 	*"RouterBOARD 411/A/AH")
 		name="rb-411"
