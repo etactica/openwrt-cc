@@ -1,0 +1,16 @@
+--- a/arch/mips/ath25/ar2315.c
++++ b/arch/mips/ath25/ar2315.c
+@@ -25,6 +25,7 @@
+ #include <linux/gpio.h>
+ #include <linux/leds.h>
+ #include <asm/bootinfo.h>
++#include <asm/prom.h>
+ #include <asm/reboot.h>
+ #include <asm/time.h>
+ 
+@@ -500,4 +501,5 @@ void __init ar2315_arch_init(void)
+ 						ARRAY_SIZE(ar2315_pci_res));
+ 	}
+ #endif
++	mips_set_machine_name("eTactica EG-100");
+ }
