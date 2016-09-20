@@ -5,6 +5,8 @@
 . /lib/functions/uci-defaults.sh
 
 ucidef_set_led_netdev "wlan" "wlan" "wlan" "wlan0"
+# "ignored" so that the init.d script doesn't change it.
+ucidef_set_led_default "etactica" "etactica" "globe" "ignored"
 
 ucidef_commit_leds
 
