@@ -1,3 +1,30 @@
+This repository contains the OpenWrt tree used to build images for eTactica
+devices, for releases based on the OpenWrt Chaos Calmer 15.05 branch.
+
+In general, the patches are in three groups
+* Support for our devices
+* some backports from later releases
+* some minor changes to defaults to suit our device type
+
+To generate the list of changes, use the following git commands:
+
+    $ git checkout rme [1]
+    $ git remote add upstream [2] <upstream url>
+    $ git cherry -v upstream/master | upstream/chaos_calmer
+
+
+[1] Releases up to and including "rme-gate-v1.26.0" are based on the "rme" branch
+Subsequent releases are based on the "rme2" branch.
+[2] Releases up to and included "rme-gate-v1.26.0" are based on 
+   https://git.openwrt.org/15.05/openwrt.git;master
+Subsequent releases are based on https://github.com/openwrt/openwrt.git;chaos_calmer
+
+After the LEDE/OpenWrt split, the original upstream branch was force-pushed.
+This is the unfortunate reason behind the split branches/upstreams.
+
+
+---- Original README below ----
+
 This is the buildsystem for the OpenWrt Linux distribution.
 
 Please use "make menuconfig" to configure your appreciated
